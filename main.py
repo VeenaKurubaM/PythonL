@@ -1,13 +1,14 @@
 #learing with Github copilot
-First="Learn Python with AI pairing"
-Second="Python_language_is_easy_to_learn"
+FIRST_STRING="Learn Python with AI pairing"
+SECOND_STRING="Python_language_is_easy_to_learn"
 # get the length of the First string
-print(len(First))
+print(len(FIRST_STRING))
 # Remove spaces and find the length
-no_spaces = First.replace(" ", "")
-print(len(no_spaces))
+print(len(FIRST_STRING))
+NO_SPACES = FIRST_STRING.replace(" ", "")
+print(len(NO_SPACES))
 # get the length of the Second string
-print(len(Second))
+print(len(SECOND_STRING))
 # Remove underscores and find the length of the second string
-no_unsderscores=Second.replace("_","")
-print(len(no_unsderscores))
+NO_UNDERSCORE=SECOND_STRING.replace("_","")
+print(len(NO_UNDERSCORE))
