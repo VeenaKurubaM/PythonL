@@ -19,6 +19,6 @@ else:
         else:
             print(f"The user input value is not float, so user entered value is {user_value} ")
     except Exception as e:
-        print(f"Input is not valid:{value}")
+        print(f"Input is not valid: {e}")
 
 
