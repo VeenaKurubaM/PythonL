@@ -6,3 +6,7 @@ brew install git
 git --version
 # First commit
 git remote add origin https://github.com/VeenaKurubaM/PythonL.git && git push -u origin main
+# Update remote URL to the new repo name on GitHub
+git remote set-url origin https://github.com/VeenaKurubaM/NEW-REPO-NAME.git
+
+
