@@ -1,4 +1,5 @@
 import math
+"""This is a simple program to demonstrate the use of math module in Python."""
 x=3.13
 y=4
 z=5.6
