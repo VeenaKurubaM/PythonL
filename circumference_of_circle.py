@@ -13,7 +13,8 @@ def calculate_circumference(radius):
     circumetance_of_circle=2 * math.pi * radius
     return circumetance_of_circle
 def print_results(radius,calculate):
-    print(f"the circumetance of the circle with {radius}is {calculate}")
+    print(f"the circumference of the circle with {radius} is {calculate}")
+    return radius,calculate
 # The main function to execute the program
 # pylint: disable=invalid-name  
 
@@ -24,6 +25,7 @@ def main():
     value = print_results(radius, calculate)
     return value
 calculate_circumference_circle=main()
+
 
 
 
