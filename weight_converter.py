@@ -5,8 +5,8 @@ class weight:
     def weight_input():
         """Getting weight from user"""
         try:
-            kgs_or_pounds=input("Enter wight in kgs or punds(kgs/pounds): ")
-            kgs_or_pounds=kgs_or_pounds.lower()
+            kgs_or_pounds=input("Enter wight in kgs or punds(K /L): ")
+            kgs_or_pounds=kgs_or_pounds.upper()
             weight_user=input("Enter the weight : ")
             return kgs_or_pounds, float(weight_user)
         except Exception as e:
@@ -14,20 +14,28 @@ class weight:
             SystemExit()
     @staticmethod
     def converter(kgs_or_pounds, weight_user):
-        """Convert Kgs to pounds"""
-        if kgs_or_pounds=="kgs":
-            weight= weight_user * 2.20462
-            return weight
-        else:
-            weight=weight_user / 2.20462
-            return weight
+        
+        try:  
+            """Convert Kgs to pounds"""
+            if kgs_or_pounds=="K":
+                weight= weight_user * 2.20462
+                return round(weight,2)
+            elif kgs_or_pounds=="L":
+                weight=weight_user / 2.20462
+                return round(weight,2)
+            else:
+                print("Please enter valid input K for kgs and L for pounds")
+                
+        except Exception as e:
+            print(f"Invalid input {e}") 
+            SystemExit()
     @staticmethod
     def print_weight(kgs_or_pounds,converter):
         """Printing weight"""
-        if kgs_or_pounds=="kgs":
-            print(f"The user weight is : {converter} pounds")
+        if kgs_or_pounds=="K":
+            print(f"The user weight is : {converter} Pounds")
         else:
-            print(f"The user weight is : {converter} pounds")
+            print(f"The user weight is : {converter} Kilograms")
             
     @staticmethod
     def main():
