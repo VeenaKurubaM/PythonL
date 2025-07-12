@@ -1,9 +1,9 @@
 class weight:
-    """ A class to convert the weig"""
+    """ A class to convert the weight from kgs to pounds and vice versa"""
     #ignore warnings
     @staticmethod
     def weight_input():
-        """Fet weight from user"""
+        """Getting weight from user"""
         try:
             kgs_or_pounds=input("Enter wight in kgs or punds(kgs/pounds): ")
             kgs_or_pounds=kgs_or_pounds.lower()
