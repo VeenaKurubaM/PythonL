@@ -14,6 +14,7 @@ class weight:
             SystemExit()
     @staticmethod
     def converter(kgs_or_pounds, weight_user):
+        """Converting weight from kgs to pounds and vice versa"""
         
         try:  
             """Convert Kgs to pounds"""
@@ -39,6 +40,7 @@ class weight:
             
     @staticmethod
     def main():
+        """Main function to run the weight converter"""
         kgs_or_pounds, weight_user=weight.weight_input()
         converter=weight.converter(kgs_or_pounds,weight_user)
         show_weight=weight.print_weight(kgs_or_pounds,converter)
