@@ -20,7 +20,7 @@ else:
     print(f" Pay {amount} dollars in the next counter")
 you_are_done=True
 if you_are_done:
-    print("Thank you for visiting our restaurant!")
+    print("Thank you for visiting our Cafe!")
        
 
 
