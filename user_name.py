@@ -11,8 +11,12 @@ class user_name_valid:
         if len(user_name) > 12:
             print("User name should be max 12 letters")
             user_name_valid.main()
+        #elif not user_name.find(" ") == -1:
+        elif user_name.find(" ") != -1:
+             print("User name should not contain spaces")
+             user_name_valid.main()
         elif not user_name.isalpha():
-            print("User name should only contains alphabets")
+            print("User name should only contains alphabets and not any digits")
             user_name_valid.main()
         else:
             print("User name is valid")
